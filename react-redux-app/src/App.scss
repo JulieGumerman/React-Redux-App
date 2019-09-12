@@ -9,12 +9,13 @@ h1 {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .trail-info {
     border: 1px solid gray;
     width: 250px;
-    margin: 30px;
+    margin: 40px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
 
