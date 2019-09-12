@@ -12,7 +12,7 @@ function App({trails, getTrails, isFetching, error}) {
   return (
     <div className="App">
       <h1>Mountain Bike Trails</h1>
-      <button onClick={getTrails}>Let's find some trails!!!</button>
+      {trails.map(trail => <h3>{trail.name}</h3>)}
     </div>
   );
 }
