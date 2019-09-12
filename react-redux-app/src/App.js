@@ -3,6 +3,7 @@ import './App.css';
 
 import { connect } from "react-redux";
 import { getTrails } from "./actions/index";
+import TrailInfo from "./components/TrailInfo"
 
 function App({trails, getTrails, isFetching, error}) {
   useEffect(() => {
@@ -12,7 +13,7 @@ function App({trails, getTrails, isFetching, error}) {
   return (
     <div className="App">
       <h1>Mountain Bike Trails</h1>
-      {trails.map(trail => <h3>{trail.name}</h3>)}
+      {trails.map(trail => <TrailInfo trail={trail} />)}
     </div>
   );
 }
