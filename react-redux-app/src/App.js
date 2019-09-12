@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import './App.scss';
 
 import { connect } from "react-redux";
 import { getTrails } from "./actions/index";
@@ -13,7 +13,9 @@ function App({trails, getTrails, isFetching, error}) {
   return (
     <div className="App">
       <h1>Mountain Bike Trails</h1>
+      <div className="wrapper">
       {trails.map(trail => <TrailInfo trail={trail} />)}
+      </div>
     </div>
   );
 }
