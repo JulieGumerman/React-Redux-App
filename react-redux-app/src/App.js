@@ -16,6 +16,9 @@ function App({trails, getTrails, isFetching, error}) {
       <div className="wrapper">
       {trails.map(trail => <TrailInfo trail={trail} />)}
       </div>
+      <div className="footer">
+        <p>API and information therein courtesy of Mountain Bike Project</p>
+      </div>
     </div>
   );
 }
