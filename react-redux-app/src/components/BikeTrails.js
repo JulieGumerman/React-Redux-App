@@ -1,7 +1,7 @@
 import React, { useEffect} from "react";
 
 import { connect } from "react-redux";
-import { getTrails } from "../actions/index";
+import { getTrails } from "../actions/mtbActions";
 import TrailInfo from "./TrailInfo"
 
 function BikeTrails({trails, getTrails, isFetching, error}) {
