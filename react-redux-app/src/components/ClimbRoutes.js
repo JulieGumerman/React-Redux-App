@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import Header from "./Header";
+import RouteInfo from "./RouteInfo";
 import { connect } from "react-redux";
 import { getRoutes } from "../actions/climbActions";
 
@@ -13,15 +14,22 @@ const ClimbRoutes = ({routes, getRoutes }) => {
         <div>
             <Header />
             <h3>Yay! Climbing!!!</h3>
+            <div className="wrapper">
+            {routes.map(route => <RouteInfo key={route.id} route={route} />)}
+            </div>
+            <div className="footer">
+            <p>API and information therein courtesy of Mountain Project.</p>
         </div>
+        </div>
+
     )
 }
 
 const mapStateToProps = state => {
     return {
-            routes: state.routes,
-    isFetching: state.isFetching, 
-    error: ""
+        routes: state.routes,
+        isFetching: state.isFetching, 
+        error: ""
 }
 
 }
