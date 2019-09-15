@@ -7,7 +7,7 @@ const TrailInfo = props => {
             <div className="details">
                 <h3>{props.trail.name}</h3>
                 <p><strong>{props.trail.location}</strong></p>
-                <i class="fas fa-biking"></i>
+                <a href={props.trail.url}><i class="fas fa-biking"></i></a>
                 <p><strong>Length:</strong> {props.trail.length}</p>
                 <p><strong>Difficulty:</strong> {props.trail.difficulty}</p>
 
