@@ -18,7 +18,7 @@ const HikeTrails = ({getHikes, hiketrails}) => {
     return (
         <div>
             <Header />
-            <h3>I can has hike.</h3>
+            <h2>Hiking Trails</h2>
             <div className="wrapper">
                 {hiketrails.map((trail => <HikeInfo key={trail.id} trail={trail} />))}
             </div>

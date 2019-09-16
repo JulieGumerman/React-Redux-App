@@ -1,8 +1,63 @@
-h1 {
-    padding-top: 40px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.header {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #283027;
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+          }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+    }
+
 }
+
+
+
+.nav-bar {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
+
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+    .nav {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+    }
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    @media only screen and (max-width: 500px) {
+        text-align: center;
+      }
+}
+
 
 .wrapper {
     width: 90%;
@@ -10,6 +65,10 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+      }
 }
 
 .trail-info {
@@ -18,6 +77,11 @@ h1 {
     margin: 40px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
+
+    @media only screen and (max-width: 700px) {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
 
     img {
         max-width: 100%;

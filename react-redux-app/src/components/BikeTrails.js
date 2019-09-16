@@ -3,6 +3,7 @@ import React, { useEffect} from "react";
 import { connect } from "react-redux";
 import { getTrails } from "../actions/mtbActions";
 import TrailInfo from "./TrailInfo"
+import Header from "./Header";
 
 function BikeTrails({trails, getTrails, isFetching, error}) {
   useEffect(() => {
@@ -10,8 +11,10 @@ function BikeTrails({trails, getTrails, isFetching, error}) {
   }, [getTrails]);
 
   return (
+    <>
+    <Header />
     <div className="container">
-      <h1>Mountain Bike Trails</h1>
+      <h2>Mountain Bike Trails</h2>
       <div className="wrapper">
       {trails.map(trail => <TrailInfo trail={trail} />)}
       </div>
@@ -19,6 +22,7 @@ function BikeTrails({trails, getTrails, isFetching, error}) {
         <p>API and information therein courtesy of Mountain Bike Project</p>
       </div>
     </div>
+    </>
   );
 }
 const mapStateToProps = state => {

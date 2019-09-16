@@ -13,7 +13,7 @@ const ClimbRoutes = ({routes, getRoutes }) => {
     return (
         <div>
             <Header />
-            <h3>Yay! Climbing!!!</h3>
+            <h2>Climbing Routes</h2>
             <div className="wrapper">
             {routes.map(route => <RouteInfo key={route.id} route={route} />)}
             </div>
