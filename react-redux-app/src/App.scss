@@ -1,6 +1,9 @@
 //*******************Variables****************/
 
 $main-color: #283027;
+$header-font: 'Montserrat', sans-serif;
+
+//*************header and navbar ************//
 
 .header {
     display: flex;
@@ -20,7 +23,7 @@ $main-color: #283027;
           }
 
         h1 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $header-font;
             color: white;
         }
     }
@@ -51,8 +54,17 @@ $main-color: #283027;
     }
 }
 
+//**********************home page*************************//
+
+.home-screen {
+    background: url("co-img.jpg");
+    height: 80vh;
+}
+
+//**********************main section *********************//
+
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $header-font;
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
@@ -97,6 +109,10 @@ h2 {
         padding-top: 0px;
     }
 }
+
+
+//************links in info cards ***************//
+
 a {
     display: flex;
     justify-content: center;
