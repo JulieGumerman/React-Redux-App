@@ -1,7 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 //*******************Variables****************/
 
 $main-color: #283027;
 $header-font: 'Montserrat', sans-serif;
+$accent-color: #9d8f74;
+$mtn-accent: #283a66;
+$cloud-accent: #949aaa;
 
 //*************header and navbar ************//
 
@@ -17,6 +24,14 @@ $header-font: 'Montserrat', sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .home-nav {
+            text-decoration: none;
+            &:hover {
+                background: $accent-color;
+                border-radius: 5px;
+            }
+        }
 
         @media only screen and (max-width: 768px) {
             flex-direction: column;
@@ -37,6 +52,7 @@ $header-font: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
 
+
     @media only screen and (max-width: 768px) {
         width: 90%;
       }
@@ -51,17 +67,79 @@ $header-font: 'Montserrat', sans-serif;
         font-size: 20px;
         color: white;
         padding: 20px;
+
+        &:hover {
+            background: $accent-color;
+            border-radius: 5px;
+        }
     }
 }
 
 //**********************home page*************************//
 
 .home-screen {
-    background: url("co-img.jpg");
-    height: 80vh;
+    background-image: url("co-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    padding-top: 20px;
+
+    .banner {
+        width: 50%;
+        font-size: 25px;
+        line-height: 1.4;
+        padding-top: 50px;
+        padding-left: 150px;
+
+        h3 {
+            color: white;
+        }
+
+
+        @media only screen and (max-width: 1200px) {
+            width: 80%;
+          }
+
+
+          @media only screen and (max-width: 600px) {
+            width: 90%;
+            padding-top: 20px;
+            padding-left: 20px;
+          }
+    }
 }
 
+.link-holder {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .nav-button {
+            margin: 20px;
+        }
+      }
+
+
+    .nav-button {
+        text-decoration: none;
+        width: 150px;
+        background: $accent-color;
+        color: white;
+        border-radius: 5px;
+
+        &:hover {
+            background: $mtn-accent;
+        }
+    }    
+}
+
+
 //**********************main section *********************//
+
 
 h2 {
     font-family: $header-font;
