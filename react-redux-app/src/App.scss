@@ -146,6 +146,7 @@ h2 {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
+    color: $main-color;
 
     @media only screen and (max-width: 500px) {
         text-align: center;
@@ -166,11 +167,12 @@ h2 {
 }
 
 .trail-info {
-    border: 1px solid gray;
+    border: 1px solid $mtn-accent;
     width: 250px;
     margin: 40px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
+    color: $main-color;
 
     @media only screen and (max-width: 700px) {
         margin: 0 auto;
@@ -214,4 +216,5 @@ a {
 .footer {
     text-align: center;
     font-family: "Roboto", sans-serif;
+    color: $main-color;
 }

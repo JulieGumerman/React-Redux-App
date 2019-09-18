@@ -15,7 +15,8 @@ const RouteInfo = props => {
                 </ul>
             </p>
             <p><strong>Type: </strong>{props.route.type}</p>
-            <p><strong>Pitches: </strong>{props.route.rating}</p>
+            <p><strong>Pitches: </strong>{props.route.pitches}</p>
+            <p><strong>Rating: </strong>{props.route.rating}</p>
 
             </div>
         </div>
