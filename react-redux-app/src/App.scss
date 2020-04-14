@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+
+//*******************Variables****************/
+
+$main-color: #283027;
+$header-font: 'Montserrat', sans-serif;
+$accent-color: #9d8f74;
+$mtn-accent: #283a66;
+$cloud-accent: #949aaa;
+
+//*************header and navbar ************//
+
+.header {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $main-color;
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .home-nav {
+            text-decoration: none;
+            &:hover {
+                background: $accent-color;
+                border-radius: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+          }
+
+        h1 {
+            font-family: $header-font;
+            color: white;
+        }
+    }
+
+}
+
+
+
+.nav-bar {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+
+
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
+
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+    .nav {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+
+        &:hover {
+            background: $accent-color;
+            border-radius: 5px;
+        }
+    }
+}
+
+//**********************home page*************************//
+
+.home-screen {
+    background-image: url("co-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    padding-top: 20px;
+
+    .banner {
+        width: 50%;
+        font-size: 25px;
+        line-height: 1.4;
+        padding-top: 50px;
+        padding-left: 150px;
+
+        h3 {
+            color: white;
+        }
+
+
+        @media only screen and (max-width: 1200px) {
+            width: 80%;
+          }
+
+
+          @media only screen and (max-width: 600px) {
+            width: 90%;
+            padding-top: 20px;
+            padding-left: 20px;
+          }
+    }
+}
+
+.link-holder {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .nav-button {
+            margin: 20px;
+        }
+      }
+
+
+    .nav-button {
+        text-decoration: none;
+        width: 150px;
+        background: $accent-color;
+        color: white;
+        border-radius: 5px;
+
+        &:hover {
+            background: $mtn-accent;
+        }
+    }    
+}
+
+
+//**********************main section *********************//
+
+
+h2 {
+    font-family: $header-font;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: $main-color;
+
+    @media only screen and (max-width: 500px) {
+        text-align: center;
+      }
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+}
+
+.trail-info {
+    border: 1px solid $mtn-accent;
+    width: 250px;
+    margin: 40px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: $main-color;
+
+    @media only screen and (max-width: 700px) {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .details {
+        padding: 20px;
+        padding-top: 0px;
+    }
+}
+
+
+//************links in info cards ***************//
+
+a {
+    display: flex;
+    justify-content: center;
+    i {
+        padding-left: 100px;
+        color: $main-color;
+        padding: 5px;
+
+
+        &:hover {
+            background: $main-color;
+            color: white;
+            border-radius: 5px;
+        }
+
+    }
+
+}
+
+
+.footer {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: $main-color;
+}
